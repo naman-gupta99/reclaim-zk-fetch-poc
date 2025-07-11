@@ -67,6 +67,12 @@ This project requires both services to be running:
     ```
     This will start the provider API on `http://localhost:8081`.
 
+    You'll need to host the provider service on a publicly accessible URL if you want to test it with the main service. You can use tools like [ngrok](https://ngrok.com/) to expose your local server to the internet. For example:
+
+    ```bash
+    ngrok http 8081
+    ```
+
 2. **Start the main service**:
     ```bash
     npm start
